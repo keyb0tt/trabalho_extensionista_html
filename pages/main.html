@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>E.E. Profa Izabel de Almeida Marin</title>
     <link rel="stylesheet" href="/styles/styleMain.css">
+    <script defer src="/scripts/script.js"></script>
 </head>
-
 <body>
     <header>
-        <div class=" header-container">
-            <div class="logo-placeholder">
-                <img src="caminho/para/sua/logo.png" alt="Logo da Escola" class="logo-img">
-            </div>
-            <h1>E.E. Profª Izabel de Almeida Marin</h1>
+        <div class="header-container">
+            <h1 class="school-title">E.E. Profª Izabel de Almeida Marin</h1>
         </div>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <nav class="navbar" id="navbar">
+            <div class="nav-item active">Home</div>
+            <div class="nav-item">Sobre</div>
+            <div class="nav-item">Disciplinas</div>
+            <div class="nav-item">Contato</div>
+        </nav>
     </header>
 
-    <nav class="navbar">
-        <div class="nav-item">Home</div>
-    </nav>
-
     <main class="content-container">
-        <div class="content-block">
-            <h2>Conteúdo de Português</h2>
-            <p style="font-size: 16px;">Aprenda sobre o uso do hífen!</p>
+        <div class="content-block fade-in">
+            <h2>Português</h2>
+            <p>Descubra as regras do uso do hífen de forma interativa!</p>
         </div>
 
-        <div class="content-block">
-            <h2>Conteúdo de Matemática</h2>
-            <p style="font-size: 16px;">Aprenda sobre equações e inequações!</p>
+        <div class="content-block fade-in">
+            <h2>Matemática</h2>
+            <p>Aprenda equações e inequações com exemplos práticos!</p>
         </div>
+
+        <section class="carousel-section">
+            <h2>Galeria da Escola</h2>
+            <div class="carousel" id="carousel">
+                <div class="carousel-track">
+                    <img src="img/foto1.jpg" alt="Foto da escola 1">
+                    <img src="img/foto2.jpg" alt="Foto da escola 2">
+                    <img src="img/foto3.jpg" alt="Foto da escola 3">
+                </div>
+                <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+                <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+            </div>
+        </section>
+        
+        <section class="contact-section">
+            <h2>Fale Conosco</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
-</body>
 
+    <footer>
+        <p>&copy; 2025 E.E. Profa Izabel de Almeida Marin. Todos os direitos reservados.</p>
+    </footer>
+</body>
 </html>
