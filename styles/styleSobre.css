@@ -1,0 +1,290 @@
+:root {
+    --primary-color: #004aad;
+    --secondary-color: #f0f4f8;
+    --text-color: #333;
+    --white: #fff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Header - Mantendo o mesmo estilo */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 20px;
+    position: relative;
+}
+
+.header-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.school-title {
+    font-size: 28px;
+    margin: 0 auto;
+}
+
+/* Navbar - Estilo consistente */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: var(--primary-color);
+    transition: max-height 0.3s ease;
+}
+
+.nav-item {
+    padding: 10px 15px;
+    font-size: 18px;
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-item:hover, .nav-item.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: var(--border-radius);
+}
+
+/* Conteúdo Principal */
+.content-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.about-section {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+}
+
+.about-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin: 15px 0;
+    box-shadow: var(--shadow);
+}
+
+.values-list {
+    margin: 15px 0 15px 30px;
+}
+
+.values-list li {
+    margin-bottom: 8px;
+}
+
+/* Grid de Estrutura */
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.facility-card {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s;
+}
+
+.facility-card:hover {
+    transform: translateY(-5px);
+}
+
+.facility-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+/* Tabela da Equipe */
+.team-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: var(--shadow);
+}
+
+.team-table th, .team-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.team-table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.team-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Card do Diretor */
+.director-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    margin: 20px 0;
+}
+
+.director-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+}
+
+/* Navegação por âncoras */
+.page-nav {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    margin: 30px 0;
+}
+
+.page-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.page-nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: rgba(0, 74, 173, 0.1);
+    transition: all 0.3s;
+}
+
+.page-nav a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Seção de Contato */
+.contact-info {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-card {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+.contact-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.contact-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    margin-top: auto;
+}
+
+.credits {
+    font-size: 0.9em;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .director-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .page-nav ul {
+        flex-direction: column;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+    }
+    
+    .navbar.open {
+        max-height: 300px;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+}
