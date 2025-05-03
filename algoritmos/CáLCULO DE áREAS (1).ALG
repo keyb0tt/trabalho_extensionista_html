@@ -1,4 +1,4 @@
-Algoritmo "Cálculo de áreas"
+Algoritmo "Cï¿½lculo de ï¿½reas"
 
 Var
    opcao, n1, n2, i: inteiro
@@ -7,17 +7,17 @@ Var
 Inicio
    i <- 0
 
-   // Seção de Comandos, procedimento, funções, operadores, etc...
-   Escreval("Olá, seja bem-vindo ao sistema de cálculo de áreas!")
-   Escreval ("Para iniciar, selecione a opção que deseja digitando o número correspondente")
+   // Seï¿½ï¿½o de Comandos, procedimento, funï¿½ï¿½es, operadores, etc...
+   Escreval("Olï¿½, seja bem-vindo ao sistema de cï¿½lculo de ï¿½reas!")
+   Escreval ("Para iniciar, selecione a opï¿½ï¿½o que deseja digitando o nï¿½mero correspondente")
    Enquanto (i = 0) faca
 
-      Escreval("Cálculo de área de: ")
-      Escreval("Círculo: 1")
-      Escreval("Paralelepípedo: 2")
-      Escreval("Triângulo: 3")
+      Escreval("Cï¿½lculo de ï¿½rea de: ")
+      Escreval("Cï¿½rculo: 1")
+      Escreval("Paralelepï¿½pedo: 2")
+      Escreval("Triï¿½ngulo: 3")
       Escreval("Quadrado: 4")
-      Escreval("Pentágono: 5")
+      Escreval("Pentï¿½gono: 5")
       Escreval("")
       Escreval("")
       Escreval("")
@@ -25,12 +25,12 @@ Inicio
       Leia(opcao)
       //calculo circulo inicio
       Se (opcao = 1) entao
-         escreval("Digite o raio do círculo em cm")
+         escreval("Digite o raio do cï¿½rculo em cm")
          Escreval("")
          Escreval("")
 
          leia(n1)
-         Escreval("A área de um círculo de raio", n1, " é ", ((n1 * n1) * 3.1415926535), " cm²" )
+         Escreval("A ï¿½rea de um cï¿½rculo de raio", n1, " ï¿½ ", ((n1 * n1) * 3.1415926535), " cmï¿½" )
          Escreval("")
          Escreval("")
 
@@ -39,30 +39,30 @@ Inicio
 
       //calculo paralelepipedo inicio
       Se (opcao = 2) entao
-         escreval("Digite a largura do paralelepípedo em cm")
+         escreval("Digite a largura do paralelepï¿½pedo em cm")
          Escreval("")
          Escreval("")
          leia(n1)
-         escreval("Digite a comprimento do paralelepípedo em cm")
+         escreval("Digite a comprimento do paralelepï¿½pedo em cm")
          Escreval("")
          Escreval("")
          leia(n2)
-         Escreval("A área de um paralelepípedo de largura", n1, " e comprimento ", n2, " é ",(n1 * n2), " cm²" )
+         Escreval("A ï¿½rea de um paralelepï¿½pedo de largura", n1, " e comprimento ", n2, " ï¿½ ",(n1 * n2), " cmï¿½" )
          Escreval("")
       fimse
       //calculo paralelepipedo fim
 
       //calculo triangulo inicio
       Se (opcao = 3) entao
-         escreval("Digite a altura do triângulo em cm")
+         escreval("Digite a altura do triï¿½ngulo em cm")
          Escreval("")
          Escreval("")
          leia(n1)
-         escreval("Digite a base do triângulo em cm")
+         escreval("Digite a base do triï¿½ngulo em cm")
          Escreval("")
          Escreval("")
          leia(n2)
-         Escreval("A área de um triângulo de altura", n1, " e base ", n2, " é ",((n1 * n2)/ 2), " cm²" )
+         Escreval("A ï¿½rea de um triï¿½ngulo de altura", n1, " e base ", n2, " ï¿½ ",((n1 * n2)/ 2), " cmï¿½" )
          Escreval("")
       fimse
 
@@ -75,7 +75,7 @@ Inicio
          Escreval("")
          Escreval("")
          leia(n1)
-         Escreval("A área de um quadrado de lado", n1,  " é ",(n1 * n1), " cm²" )
+         Escreval("A ï¿½rea de um quadrado de lado", n1,  " ï¿½ ",(n1 * n1), " cmï¿½" )
          Escreval("")
       fimse
 
@@ -83,11 +83,11 @@ Inicio
 
       //caluculo pentagono inicio
       Se (opcao = 5) entao
-         escreval("Digite o lado do pentágono regular em cm")
+         escreval("Digite o lado do pentï¿½gono regular em cm")
          Escreval("")
          Escreval("")
          leia(n1)
-         Escreval("A área de um pentágono regular de lado ", n1, " é ", (5 * n1 * n1) / (4 * 0.7265), " cm²")
+         Escreval("A ï¿½rea de um pentï¿½gono regular de lado ", n1, " ï¿½ ", (5 * n1 * n1) / (4 * 0.7265), " cmï¿½")
          Escreval("")
       fimse
       //calculo pentagono fim
@@ -95,7 +95,7 @@ Inicio
       //encerrar
       Escreval("Deseja sair?")
       Escreval("Sim: 1")
-      Escreval("Não: 2")
+      Escreval("Nï¿½o: 2")
       Escreval("")
       Escreval("")
       Escreval("")
