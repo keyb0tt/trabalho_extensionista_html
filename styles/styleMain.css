@@ -107,10 +107,10 @@ header {
     box-shadow: var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
-    max-width: 100%; 
+    max-width: 100%;
     box-sizing: border-box;
     flex-grow: 1;
-    flex-basis: 320px; 
+    flex-basis: 320px;
 }
 
 .content-block:hover {
@@ -170,14 +170,28 @@ footer {
     }
 }
 
-.carousel-section, .contact-section {
+.contact-section {
+    max-width: 600px;
+    /* Largura máxima reduzida para melhor proporção */
+    margin: 60px auto;
+    /* Centraliza horizontalmente */
+    padding: 0 20px;
+    width: 40%;
+    text-align: center;
+    /* Centraliza o texto do título */
+}
+
+
+.carousel-section,
+.contact-section {
     max-width: 1200px;
     margin: 60px auto;
     padding: 0 20px;
     text-align: center;
 }
 
-.carousel-section h2, .contact-section h2 {
+.carousel-section h2,
+.contact-section h2 {
     font-size: 28px;
     margin-bottom: 30px;
     color: var(--primary-color);
@@ -207,7 +221,7 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
     border: none;
     padding: 10px;
@@ -217,7 +231,7 @@ footer {
 }
 
 .carousel-btn:hover {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .prev {
@@ -236,6 +250,8 @@ footer {
     padding: 30px;
     border-radius: 10px;
     box-shadow: var(--shadow);
+    width: 100%;
+    /* Ocupa toda a largura da contact-section */
 }
 
 .contact-form input,
@@ -246,6 +262,10 @@ footer {
     border-radius: 6px;
     outline: none;
     transition: border-color 0.3s;
+    width: 100%;
+    /* Garante que ocupem toda a largura */
+    box-sizing: border-box;
+    /* Inclui padding na largura */
 }
 
 .contact-form input:focus,
@@ -262,6 +282,23 @@ footer {
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: auto;
+    /* Largura automática baseada no conteúdo */
+    margin: 0 auto;
+    /* Centraliza o botão */
+    min-width: 150px;
+    /* Largura mínima para melhor aparência */
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
 }
 
 .contact-form button:hover {
@@ -276,7 +313,7 @@ footer {
     margin-bottom: 15px;
 }
 
-a{
+a {
     text-decoration: none;
-    color:#fff;
+    color: #fff;
 }
