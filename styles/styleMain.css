@@ -6,6 +6,12 @@
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -91,6 +97,7 @@ header {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
+    width: 100%;
 }
 
 .content-block {
@@ -99,6 +106,11 @@ header {
     border-radius: 10px;
     box-shadow: var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 100%; 
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-basis: 320px; 
 }
 
 .content-block:hover {
@@ -262,4 +274,9 @@ footer {
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
 }
