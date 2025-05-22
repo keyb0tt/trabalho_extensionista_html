@@ -20,14 +20,17 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    line-height: 1.6;
 }
 
 header {
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 20px;
-    position: relative;
+    padding: 20px 0;
+    width: 100vw;
+    max-height: 1000px;
+    text-align: center;
+    box-shadow: none;
+    border: none;
 }
 
 .header-container {
@@ -37,13 +40,12 @@ header {
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
     text-align: center;
+    height: 10vh;
 }
 
-.school-title {
-    font-size: 28px;
-    margin: 0 auto;
+h1 {
+    font-size: 32px;
 }
 
 .navbar {
@@ -68,12 +70,13 @@ header {
     text-decoration: none;
 }
 
-.nav-item:hover, .nav-item.active {
+.nav-item:hover {
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: var(--border-radius);
 }
 
 .content-container {
+    gap: 30px;
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
@@ -145,7 +148,8 @@ header {
     box-shadow: var(--shadow);
 }
 
-.team-table th, .team-table td {
+.team-table th,
+.team-table td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
@@ -240,14 +244,6 @@ header {
     margin-top: 10px;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--primary-color);
-    color: var(--white);
-    margin-top: auto;
-}
-
 .credits {
     font-size: 0.9em;
     margin-top: 10px;
@@ -259,21 +255,21 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .page-nav ul {
         flex-direction: column;
     }
-    
+
     .navbar {
         flex-direction: column;
         max-height: 0;
         overflow: hidden;
     }
-    
+
     .navbar.open {
         max-height: 300px;
     }
-    
+
     .menu-toggle {
         display: block;
     }

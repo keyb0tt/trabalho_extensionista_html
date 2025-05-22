@@ -1,11 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VisualG</title>
+    <link rel="stylesheet" href="/styles/styleVisualG.css">
+
 </head>
+
 <body>
-    
+    <header>
+        <div class="header-container">
+            <h1>VisualG</h1>
+        </div>
+        <nav class="navbar" id="navbar">
+            <div class="nav-item"><a href="/pages/main.html">Home</a></div>
+            <div class="nav-item"><a href="/pages/sobre.html">Sobre</a></div>
+            <div class="nav-item"><a href="/pages/visualg.html">VisualG</a></div>
+            <div class="nav-item"><a href="/pages/algoritmo.html">Algoritmo</a></div>
+        </nav>
+    </header>
+
+
+    <main class="main-content">
+        <section id="sobre" class="content-section fade-in">
+            <h2>O que é o VisualG</h2>
+
+            <h3>Definição da Ferramenta</h3>
+            <p>O VisualG é um ambiente de desenvolvimento gratuito que permite criar, editar, executar e testar
+                algoritmos escritos na linguagem Portugol. A linguagem Portugol simula uma linguagem de programação de
+                fácil compreensão, utilizando comandos em português, o que facilita o aprendizado.</p>
+
+            <h3>Finalidade no Ensino de Algoritmos</h3>
+            <p>O VisualG foi desenvolvido com o objetivo de ajudar estudantes a aprenderem os fundamentos da lógica de
+                programação e algoritmos, antes de entrarem em linguagens de programação mais complexas como Python,
+                Java ou C.</p>
+
+            <h3>Público-alvo</h3>
+            <p>Estudantes iniciantes em programação, especialmente de cursos técnicos e superiores em áreas como
+                Informática, Engenharia, Análise e Desenvolvimento de Sistemas, entre outros.</p>
+        </section>
+
+        <section id="caracteristicas" class="content-section fade-in">
+            <h2>Principais Características</h2>
+
+            <h3>Ambiente de Desenvolvimento</h3>
+            <p>O VisualG oferece uma interface gráfica simples, intuitiva e totalmente em português. Ele permite a
+                criação de algoritmos de forma estruturada, com recursos como:</p>
+
+            <ul>
+                <li>Destaque de sintaxe</li>
+                <li>Execução passo a passo</li>
+                <li>Visualização de variáveis</li>
+                <li>Ambiente totalmente em português</li>
+            </ul>
+
+            <p>Estes recursos tornam o processo de aprendizagem mais didático e acessível para iniciantes.</p>
+        </section>
+
+        <section id="funcionalidades" class="content-section fade-in">
+            <h2>Funcionalidades e Recursos</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h4>Tipos de Variáveis Suportados</h4>
+                    <ul>
+                        <li>Inteiro</li>
+                        <li>Real (números com ponto decimal)</li>
+                        <li>Literal (textos)</li>
+                        <li>Lógico (verdadeiro ou falso)</li>
+                        <li>Caracter</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h4>Estruturas de Controle</h4>
+                    <ul>
+                        <li><strong>Condicionais:</strong>
+                            <ul>
+                                <li>se...então...senão</li>
+                                <li>caso (semelhante ao switch)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Repetições:</strong>
+                            <ul>
+                                <li>enquanto</li>
+                                <li>para</li>
+                                <li>repita...até</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h4>Outros Recursos</h4>
+                    <ul>
+                        <li><strong>Entrada e Saída de Dados:</strong>
+                            <ul>
+                                <li>leia – utilizado para entrada de dados do usuário</li>
+                                <li>escreva – utilizado para saída de dados na tela</li>
+                            </ul>
+                        </li>
+                        <li><strong>Comentários no Código:</strong>
+                            <ul>
+                                <li>Os comentários são feitos com //, servindo para explicar o que o código faz e não
+                                    são executados.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="exemplo" class="content-section fade-in">
+            <h2>Exemplo Prático</h2>
+
+            <div class="code-block">
+                <span class="code-comment">// Algoritmo que lê dois números e exibe a soma</span><br><br>
+                <span class="code-keyword">algoritmo</span> <span class="code-string">"soma_numeros"</span><br>
+                <span class="code-keyword">var</span><br>
+                &nbsp;&nbsp;&nbsp;<span class="code-variable">num1</span>, <span class="code-variable">num2</span>,
+                <span class="code-variable">soma</span>: <span class="code-keyword">inteiro</span><br>
+                <span class="code-keyword">inicio</span><br>
+                &nbsp;&nbsp;&nbsp;<span class="code-keyword">escreva</span>(<span class="code-string">"Digite o primeiro
+                    número: "</span>)<br>
+                &nbsp;&nbsp;&nbsp;<span class="code-keyword">leia</span>(<span
+                    class="code-variable">num1</span>)<br><br>
+                &nbsp;&nbsp;&nbsp;<span class="code-keyword">escreva</span>(<span class="code-string">"Digite o segundo
+                    número: "</span>)<br>
+                &nbsp;&nbsp;&nbsp;<span class="code-keyword">leia</span>(<span
+                    class="code-variable">num2</span>)<br><br>
+                &nbsp;&nbsp;&nbsp;<span class="code-variable">soma</span> := <span class="code-variable">num1</span> +
+                <span class="code-variable">num2</span><br><br>
+                &nbsp;&nbsp;&nbsp;<span class="code-keyword">escreva</span>(<span class="code-string">"A soma é:
+                    "</span>, <span class="code-variable">soma</span>)<br>
+                <span class="code-keyword">fimalgoritmo</span>
+            </div>
+
+            <h3>Explicação:</h3>
+            <p>Este algoritmo solicita ao usuário que digite dois números inteiros. Em seguida, ele soma os dois valores
+                e exibe o resultado na tela. Cada passo é comentado para facilitar a compreensão.</p>
+        </section>
+
+        <section id="download" class="content-section fade-in">
+            <h2>Como Baixar e Instalar o VisualG</h2>
+
+            <div class="download-info">
+                <h3>Link Oficial de Download:</h3>
+                <p><a href="https://sourceforge.net/projects/visualg30/" target="_blank" class="download-btn">Baixar
+                        VisualG</a></p>
+
+                <h3>Requisitos Básicos:</h3>
+                <ul>
+                    <li>Sistema operacional Windows</li>
+                    <li>50MB de espaço livre em disco</li>
+                    <li>Processador Pentium ou superior</li>
+                    <li>Memória mínima de 512MB</li>
+                </ul>
+
+                <h3>Etapas de Instalação (Resumo):</h3>
+                <ol>
+                    <li>Acesse o link oficial e baixe o instalador.</li>
+                    <li>Execute o arquivo .exe baixado.</li>
+                    <li>Siga as instruções da tela clicando em "Avançar".</li>
+                    <li>Escolha a pasta de instalação e finalize.</li>
+                    <li>Após instalado, abra o VisualG para começar a usar.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="content-section fade-in">
+            <h2>Conclusão</h2>
+            <p>O VisualG é uma excelente ferramenta introdutória para quem está começando a aprender lógica de
+                programação. Por ser em português e ter uma interface simples, torna o aprendizado mais acessível,
+                prático e eficaz, servindo como ponte para linguagens mais complexas no futuro.</p>
+        </section>
+    </main>
+
+    <script>
+        // Adiciona animação de fade-in conforme a página é rolada
+        document.addEventListener('DOMContentLoaded', function () {
+            const fadeElements = document.querySelectorAll('.fade-in');
+
+            const fadeInObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            fadeElements.forEach(element => {
+                element.style.opacity = '0';
+                fadeInObserver.observe(element);
+            });
+        });
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,36 @@
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.ul li a {
+    color: #424242;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #2d3e50;
+}
+
+h3 {
+    padding-top: 2px;
+    margin: 10px 0;
+}
