@@ -1,126 +1,437 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matemática - Equações e Inequações</title>
-    <link rel="stylesheet" href="/styles/stylePT.css">
-    <link rel="stylesheet" href="/styles/formatacaoTexto.css">
-</head>
+    <link rel="stylesheet" href="/styles/stylePT.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header-container">
-            <h1 class="school-title">Matemática - Equações e Inequações</h1>
-        </div>
-        <button class="menu-toggle" id="menu-toggle">☰</button>
-        <nav class="navbar" id="navbar">
-            <div class="nav-item"><a href="/pages/main.html">Home</a></div>
-            <div class="nav-item"><a href="/pages/sobre.html">Sobre</a></div>
-        </nav>
+      <div class="header-container">
+        <h1 class="school-title">Matemática - Equações e Inequações</h1>
+      </div>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <nav class="navbar" id="navbar">
+        <div class="nav-item"><a href="/pages/main.html">Home</a></div>
+        <div class="nav-item"><a href="/pages/sobre.html">Sobre</a></div>
+      </nav>
     </header>
 
     <main class="content-container">
-        <section class="content-section">
-            <h2 class="section-title">Introdução às Equações e Inequações</h2>
+      <section class="content-section">
+        <h2 class="section-title">Entendendo Equações</h2>
 
-            <div class="video-container">
-                <iframe width="560" height="315" src="/assets/videos/matematica.mp4"
-                    title="Aula sobre Equações e Inequações" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <p class="video-caption">Vídeo explicativo sobre conceitos básicos - Profa. Camila</p>
-            </div>
+        <article class="content-article">
+          <h3>O que é uma Equação?</h3>
+          <p>
+            Uma equação é uma <strong>balança matemática</strong>. De um lado,
+            temos uma expressão com letras e números, e do outro, um número.
+            Nosso objetivo é encontrar o valor da letra (chamada de
+            <strong>incógnita</strong>) que mantém essa balança equilibrada.
+          </p>
+          <p>
+            Imagine uma balança de verdade. Se você colocar 5 quilos de um lado
+            e 5 quilos do outro, ela está equilibrada. Se colocarmos um peso a
+            mais de um lado, ela desequilibra. Resolver uma equação é encontrar
+            o peso certo para deixar tudo igual de novo!
+          </p>
 
-            <article class="content-article">
-                <h3>O que são Equações?</h3>
-                <p>Equações são sentenças matemáticas que afirmam a igualdade entre duas expressões. O objetivo é
-                    encontrar o valor desconhecido (geralmente representado por <code>x</code>) que torna essa igualdade
-                    verdadeira.</p>
-                <p><strong>Exemplo:</strong> <code>2x + 3 = 11</code>. Aqui, a solução é <code>x = 4</code>.</p>
+          <h3>Estrutura Básica</h3>
+          <p>
+            Uma equação tem sempre um sinal de <code>=</code> (igualdade). Veja
+            este exemplo:
+          </p>
+          <p><code>2x + 3 = 11</code></p>
+          <p>
+            Aqui, o <code>2x + 3</code> é o lado esquerdo, e <code>11</code> é o
+            lado direito.
+          </p>
+          <p>
+            Nosso trabalho é descobrir o valor de <code>x</code> que faz os dois
+            lados serem iguais.
+          </p>
 
-                <h3>Tipos Comuns de Equações</h3>
-                <ul>
-                    <li><strong>Equações do 1º grau:</strong> possuem a incógnita elevada à potência 1.</li>
-                    <li><strong>Equações do 2º grau:</strong> possuem a incógnita elevada ao quadrado (x²).</li>
-                </ul>
+          <h3>Resolvendo Passo a Passo</h3>
+          <ol>
+            <li>
+              <strong>Passo 1:</strong> Subtraia 3 dos dois lados:
+              <code>2x + 3 - 3 = 11 - 3 → 2x = 8</code>
+            </li>
+            <li>
+              <strong>Passo 2:</strong> Divida os dois lados por 2:
+              <code>2x ÷ 2 = 8 ÷ 2 → x = 4</code>
+            </li>
+          </ol>
+          <p><strong>Resposta:</strong> <code>x = 4</code></p>
 
-                <h3>O que são Inequações?</h3>
-                <p>Inequações são expressões que indicam desigualdade entre dois lados. Os símbolos usados incluem:</p>
-                <ul>
-                    <li><code>&lt;</code> (menor que)</li>
-                    <li><code>&gt;</code> (maior que)</li>
-                    <li><code>&le;</code> (menor ou igual a)</li>
-                    <li><code>&ge;</code> (maior ou igual a)</li>
-                </ul>
-                <p><strong>Exemplo:</strong> <code>3x - 5 &gt; 4</code>. A solução é <code>x &gt; 3</code>.</p>
+          <h3>Dica:</h3>
+          <p>
+            Você pode sempre fazer qualquer operação em uma equação,
+            <strong>desde que faça dos dois lados</strong>.
+          </p>
 
-                <div class="image-container">
-                    <img src="https://s2.static.brasilescola.uol.com.br/be/2022/07/equacao-do-primeiro-grau.jpg"
-                        alt="Ilustração com equações básicas">
-                    <p class="image-caption">Imagem ilustrativa de equações do 1º grau</p>
-                </div>
+          <h3>Equações do 1º Grau</h3>
+          <p>
+            Essas equações têm apenas <code>x</code>, sem ele estar elevado ao
+            quadrado ou cúbico. São do tipo:
+          </p>
+          <ul>
+            <li><code>3x = 9</code></li>
+            <li><code>x - 5 = 2</code></li>
+          </ul>
+          <p>Elas sempre têm <strong>uma única resposta</strong>.</p>
 
-                <h4>Regras Importantes:</h4>
-                <table class="rules-table">
-                    <thead>
-                        <tr>
-                            <th>Situação</th>
-                            <th>Regra</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Multiplicação por número negativo (inequações)</td>
-                            <td>Inverte-se o sinal da desigualdade</td>
-                        </tr>
-                        <tr>
-                            <td>Transposição de termos</td>
-                            <td>Ao trocar de lado, muda-se o sinal</td>
-                        </tr>
-                    </tbody>
-                </table>
+          <h3>Equações do 2º Grau (introdução)</h3>
+          <p>Nestas, temos <code>x²</code> (x ao quadrado). Exemplo:</p>
+          <p><code>x² - 5x + 6 = 0</code></p>
+          <p>
+            São mais complexas e podem ter duas respostas, uma ou nenhuma.
+            Podemos resolvê-las usando a <strong>fórmula de Bhaskara</strong>.
+          </p>
+          <p><code>x = (-b ± √(b² - 4ac)) / 2a</code></p>
 
-                <h4>Links úteis:</h4>
-                <ul class="useful-links">
-                    <li><a href="https://www.todamateria.com.br/equacoes-do-1o-grau/" target="_blank">Equações de 1º
-                            grau</a></li>
-                    <li><a href="https://www.todamateria.com.br/inequacoes/" target="_blank">Inequações explicadas</a>
-                    </li>
-                    <li><a href="https://brasilescola.uol.com.br/matematica/inequacoes.htm" target="_blank">Exemplos e
-                            exercícios</a></li>
-                </ul>
+          <h3>Exercício:</h3>
+          <p>Resolva: <code>5x - 10 = 0</code></p>
+          <details>
+            <summary>Ver solução</summary>
+            <p>Some 10: <code>5x = 10</code></p>
+            <p>Divida por 5: <code>x = 2</code></p>
+          </details>
+        </article>
+      </section>
 
-                <div class="quick-summary">
-                    <h4>Resumo rápido:</h4>
-                    <p>Equações lidam com igualdade; inequações, com desigualdade. Saber manipulá-las é essencial para
-                        resolver problemas matemáticos e interpretar situações do cotidiano.</p>
-                </div>
-            </article>
-        </section>
+      <h4>📘 Materiais úteis - Equações</h4>
+      <ul class="useful-links">
+        <li>
+          <a
+            href="https://www.todamateria.com.br/equacoes-do-1o-grau/"
+            target="_blank"
+            >Equações de 1º grau – Teoria</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://mundoeducacao.uol.com.br/matematica/equacao-2-grau.htm"
+            target="_blank"
+            >Equações de 2º grau – Explicações e exercícios</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://rachacuca.com.br/quiz/2717/equacao-de-1-grau/"
+            target="_blank"
+            >Quiz sobre Equações do 1º grau</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=cs0BdQyP7ZY" target="_blank"
+            >Videoaula: Equações
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://brasilescola.uol.com.br/o-que-e/equacao.htm"
+            target="_blank"
+            >O que é uma Equação? – Brasil Escola</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.estudopratico.com.br/exercicios-de-equacoes-do-1o-grau-com-gabarito/"
+            target="_blank"
+            >Exercícios resolvidos – Estudo Prático</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://matematicabasica.net.br/equacoes-do-2-grau-completas/"
+            target="_blank"
+            >Equações do 2º grau completas – passo a passo</a
+          >
+        </li>
+      </ul>
+      <div class="image-container">
+        <img
+          src="https://s2.static.brasilescola.uol.com.br/be/2022/07/equacao-do-primeiro-grau.jpg"
+          alt="Ilustração com equações básicas"
+        />
+        <p class="image-caption">Imagem ilustrativa de equações do 1º grau</p>
+      </div>
 
-        <section class="exercises-section">
-            <h3>Exercícios Práticos</h3>
-            <div class="exercise">
-                <p>1. Resolva a equação:</p>
-                <ul>
-                    <li>2x - 7 = 5</li>
-                </ul>
+      <section class="content-section">
+        <h2 class="section-title">Entendendo Inequações</h2>
 
-                <p>2. Resolva a inequação:</p>
-                <ul>
-                    <li>3x + 2 &gt; 11</li>
-                </ul>
+        <article class="content-article">
+          <h3>O que é uma Inequação?</h3>
+          <p>
+            Enquanto as equações mostram que dois lados são iguais, as
+            inequações mostram que
+            <strong>um lado é maior ou menor que o outro</strong>.
+          </p>
+          <p>
+            É como dizer: “Eu tenho mais dinheiro que você” ou “A temperatura
+            hoje está menor que ontem”.
+          </p>
 
-                <p>3. Classifique:</p>
-                <ul>
-                    <li>x² - 9 = 0 → equação de qual grau?</li>
-                    <li>5x + 4 &le; 2x - 1 → isso é uma equação ou inequação?</li>
-                </ul>
-            </div>
-        </section>
+          <h3>Símbolos Usados:</h3>
+          <ul>
+            <li><code>&lt;</code> → menor que</li>
+            <li><code>&gt;</code> → maior que</li>
+            <li><code>&le;</code> → menor ou igual a</li>
+            <li><code>&ge;</code> → maior ou igual a</li>
+          </ul>
+
+          <h3>Exemplo simples:</h3>
+          <p><code>2x + 1 &lt; 7</code></p>
+          <ol>
+            <li>Subtraia 1: <code>2x &lt; 6</code></li>
+            <li>Divida por 2: <code>x &lt; 3</code></li>
+          </ol>
+          <p>
+            <strong>Significado:</strong> Qualquer número menor que 3 é solução!
+          </p>
+
+          <h3>Atenção especial:</h3>
+          <p>
+            Se você multiplicar ou dividir por um número negativo,
+            <strong>inverta o sinal da desigualdade</strong>!
+          </p>
+          <p>Exemplo:</p>
+          <p>
+            <code>-3x &gt; 6</code> → Divida por -3 → <code>x &lt; -2</code>
+          </p>
+
+          <h3>Inequações com duas partes</h3>
+          <p>
+            Exemplo: <code>1 &lt; x &le; 5</code> → Significa que x pode ser
+            maior que 1 e menor ou igual a 5 ao mesmo tempo.
+          </p>
+
+          <h3>Inequações com gráfico (conceito visual)</h3>
+          <p>
+            Se a equação tem <code>x²</code>, ela forma uma parábola. Podemos
+            olhar para os intervalos onde a parábola está acima ou abaixo do
+            eixo x.
+          </p>
+
+          <h3>Exercício:</h3>
+          <p>Resolva: <code>3x - 4 &ge; 2</code></p>
+          <details>
+            <summary>Ver solução</summary>
+            <p>Some 4: <code>3x &ge; 6</code></p>
+            <p>Divida por 3: <code>x &ge; 2</code></p>
+          </details>
+        </article>
+      </section>
+
+      <h4>📙 Materiais úteis - Inequações</h4>
+      <ul class="useful-links">
+        <li>
+          <a href="https://www.todamateria.com.br/inequacoes/" target="_blank"
+            >Inequações – Toda Matéria</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://brasilescola.uol.com.br/matematica/inequacoes.htm"
+            target="_blank"
+            >Exemplos e exercícios – Brasil Escola</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://rachacuca.com.br/quiz/51575/sistemas-equacoes-e-inequacoes/"
+            target="_blank"
+            >Quiz sobre Inequações</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=-LT4pGt2acE" target="_blank"
+            >Videoaula: Inequações (canal ProEnem)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://mundoeducacao.uol.com.br/matematica/inequacao-produto.htm"
+            target="_blank"
+            >Inequação produto – Mundo Educação</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.somatematica.com.br/emedio/inequacoes/"
+            target="_blank"
+            >Teoria e exercícios sobre Inequações – Só Matemática</a
+          >
+        </li>
+      </ul>
+
+      <div class="image-container">
+        <img
+          src="https://beduka.com/blog/wp-content/uploads/2020/10/como-resolver-um-sistema-de-inequação.jpg"
+          alt="Ilustração com Inequações básicas"
+        />
+        <p class="image-caption">Imagem ilustrativa de inequações do 1º grau</p>
+      </div>
+
+      <h4>Regras Importantes:</h4>
+      <table class="rules-table">
+        <thead>
+          <tr>
+            <th>Situação</th>
+            <th>Regra</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Multiplicação por número negativo (inequações)</td>
+            <td>Inverte-se o sinal da desigualdade</td>
+          </tr>
+          <tr>
+            <td>Transposição de termos</td>
+            <td>Ao trocar de lado, muda-se o sinal (ex: + vira -)</td>
+          </tr>
+          <tr>
+            <td>Eliminação de frações</td>
+            <td>Multiplica-se todos os termos pelo denominador comum</td>
+          </tr>
+          <tr>
+            <td>Expressões entre parênteses</td>
+            <td>Aplicar a distributiva: <code>a(b + c) = ab + ac</code></td>
+          </tr>
+          <tr>
+            <td>Isolamento da variável</td>
+            <td>Deixe o <code>x</code> sozinho de um lado da equação</td>
+          </tr>
+          <tr>
+            <td>Equações com duas incógnitas</td>
+            <td>Necessita de um sistema (duas equações simultâneas)</td>
+          </tr>
+          <tr>
+            <td>Verificação da solução</td>
+            <td>
+              Sempre substitua o <code>x</code> encontrado para testar se a
+              equação está correta
+            </td>
+          </tr>
+          <tr>
+            <td>Intervalos em inequações</td>
+            <td>
+              Use testes em cada intervalo para saber onde a inequação é
+              verdadeira
+            </td>
+          </tr>
+          <tr>
+            <td>Fatoração</td>
+            <td>Utilizada em equações do 2º grau para encontrar as raízes</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <section class="exercises-section">
+        <h3>Exercícios Práticos</h3>
+        <div class="exercise">
+          <p><strong>1. Resolva a equação:</strong></p>
+          <ul>
+            <li>2x - 7 = 5</li>
+          </ul>
+          <details>
+            <summary>Ver resposta</summary>
+            <p>Some 7 aos dois lados: 2x = 12<br />Divida por 2: x = 6 ✅</p>
+          </details>
+
+          <p><strong>2. Resolva a inequação:</strong></p>
+          <ul>
+            <li>3x + 2 &gt; 11</li>
+          </ul>
+          <details>
+            <summary>Ver resposta</summary>
+            <p>Subtraia 2: 3x &gt; 9<br />Divida por 3: x &gt; 3 ✅</p>
+          </details>
+
+          <p><strong>3. Classifique:</strong></p>
+          <ul>
+            <li>x² - 9 = 0 → equação de qual grau?</li>
+            <li>5x + 4 &le; 2x - 1 → isso é uma equação ou inequação?</li>
+          </ul>
+          <details>
+            <summary>Ver respostas</summary>
+            <p>
+              ✓ x² - 9 = 0 → Equação do <strong>2º grau</strong><br />
+              ✓ 5x + 4 ≤ 2x - 1 → É uma <strong>inequação</strong> (tem sinal de
+              desigualdade)
+            </p>
+          </details>
+
+          <p><strong>4. Resolva e interprete:</strong></p>
+          <ul>
+            <li>−4x ≤ 8</li>
+          </ul>
+          <details>
+            <summary>Ver resposta</summary>
+            <p>Divida por -4 (lembre-se de inverter o sinal): x ≥ -2 ✅</p>
+          </details>
+
+          <p><strong>5. Resolva a equação com parênteses:</strong></p>
+          <ul>
+            <li>3(x - 2) = 2x + 1</li>
+          </ul>
+          <details>
+            <summary>Ver resposta</summary>
+            <p>Distributiva: 3x - 6 = 2x + 1<br />Transposição: x = 7 ✅</p>
+          </details>
+
+          <p><strong>6. Determine se as sentenças são verdadeiras:</strong></p>
+          <ul>
+            <li>Se x = 3, então 2x + 1 = 7?</li>
+            <li>Se x = 1, então x² - 4x + 3 = 0?</li>
+          </ul>
+          <details>
+            <summary>Ver respostas</summary>
+            <p>
+              ✓ 2(3) + 1 = 7 → Verdadeiro<br />
+              ✓ 1² - 4(1) + 3 = 0 → 1 - 4 + 3 = 0 → Verdadeiro ✅
+            </p>
+          </details>
+
+          <p><strong>7. Classifique e resolva:</strong></p>
+          <ul>
+            <li>2x² - 8 &gt; 0</li>
+          </ul>
+          <details>
+            <summary>Ver resposta</summary>
+            <p>
+              É uma <strong>inequação do 2º grau</strong><br />
+              Resolva: 2x² - 8 &gt; 0 → x² - 4 &gt; 0 → (x - 2)(x + 2) &gt; 0<br />
+              Solução: x &lt; -2 ou x &gt; 2 ✅
+            </p>
+          </details>
+
+          <p><strong>8. Preencha os espaços:</strong></p>
+          <ul>
+            <li>A equação 5x = 20 tem como solução x = ___</li>
+            <li>A inequação x - 3 &lt; 5 tem como solução x &lt; ___</li>
+          </ul>
+          <details>
+            <summary>Ver respostas</summary>
+            <p>
+              ✓ x = 4<br />
+              ✓ x &lt; 8 ✅
+            </p>
+          </details>
+        </div>
+      </section>
     </main>
-</body>
 
+    <footer>
+      <p>
+        &copy; 2025 E.E. Profa Izabel de Almeida Marin. Todos os direitos
+        reservados.
+      </p>
+    </footer>
+
+    <script src="/scripts/scriptPortugues.js"></script>
+  </body>
 </html>
