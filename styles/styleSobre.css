@@ -48,6 +48,10 @@ h1 {
     font-size: 32px;
 }
 
+h3 {
+    margin-bottom: 3px;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
