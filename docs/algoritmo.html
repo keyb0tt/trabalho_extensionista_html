@@ -1,119 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cálculo de Áreas</title>
-    <link rel="stylesheet" href="styleAL.css">
-</head>
+    <link rel="stylesheet" href="styleAL.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header-container">
-            <h1>Algoritmo Cálculo de Área</h1>
-        </div>
-        <nav class="navbar" id="navbar">
-            <div class="nav-item"><a href="index.html">Home</a></div>
-            <div class="nav-item"><a href="sobre.html">Sobre</a></div>
-            <div class="nav-item"><a href="visualg.html">VisualG</a></div>
-            <div class="nav-item"><a href="algoritmo.html">Algoritmo</a></div>
-        </nav>
+      <div class="header-container">
+        <h1>Algoritmo Cálculo de Área</h1>
+      </div>
+      <nav class="navbar" id="navbar">
+        <div class="nav-item"><a href="index.html">Home</a></div>
+        <div class="nav-item"><a href="sobre.html">Sobre</a></div>
+        <div class="nav-item"><a href="visualg.html">VisualG</a></div>
+        <div class="nav-item"><a href="algoritmo.html">Algoritmo</a></div>
+      </nav>
     </header>
     <main class="content">
-
-
-        <!-- Lista de Tópicos-->
-        <h2 style="padding-top: 10px">Índice</h2>
-        <ol type="1">
-            <li><a href="#descricao">Descrição do Algoritmo</a></li>
-            <li><a href="#estruturalgoritmo">Estrutura do Algoritmo</a></li>
-            <li><a href="#detalhamento">Detalhamento do Algoritmo</a></li>
-            <ol type="a" class="ul">
-                <li><a href="#circulo">Cálculo da Área do Círculo</a></li>
-                <li><a href="#paralelepipedo">Cálculo da Área do Paralelepípedo</a></li>
-                <li><a href="#triangulo">Cálculo da Área do Triângulo</a></li>
-                <li><a href="#quadrado">Cálculo da Área do Quadrado</a></li>
-                <li><a href="#pentagono">Cálculo da Área do Pentágono Regular</a></li>
-            </ol>
-            <li><a href="#fluxo">Fluxo do Algoritmo</a></li>
-            <li><a href="#conclusao">Conclusão</a></li>
+      <!-- Lista de Tópicos-->
+      <h2 style="padding-top: 10px">Índice</h2>
+      <ol type="1">
+        <li><a href="#descricao">Descrição do Algoritmo</a></li>
+        <li><a href="#estruturalgoritmo">Estrutura do Algoritmo</a></li>
+        <li><a href="#detalhamento">Detalhamento do Algoritmo</a></li>
+        <ol type="a" class="ul">
+          <li><a href="#circulo">Cálculo da Área do Círculo</a></li>
+          <li>
+            <a href="#paralelepipedo">Cálculo da Área do Paralelepípedo</a>
+          </li>
+          <li><a href="#triangulo">Cálculo da Área do Triângulo</a></li>
+          <li><a href="#quadrado">Cálculo da Área do Quadrado</a></li>
+          <li><a href="#pentagono">Cálculo da Área do Pentágono Regular</a></li>
         </ol>
+        <li><a href="#fluxo">Fluxo do Algoritmo</a></li>
+        <li><a href="#conclusao">Conclusão</a></li>
+      </ol>
 
-        <h2 id="descricao">Descrição do Algoritmo</h2>
-        <p>Este algoritmo tem como objetivo realizar o cálculo da área de várias figuras geométricas, como círculo,
-            paralelepípedo, triângulo, quadrado e pentágono regular. O algoritmo é estruturado para interagir com o
-            usuário, coletando os dados necessários para cada cálculo e fornecendo o resultado desejado.</p>
+      <h2 id="descricao">Descrição do Algoritmo</h2>
+      <p>
+        Este algoritmo tem como objetivo realizar o cálculo da área de várias
+        figuras geométricas, como círculo, paralelepípedo, triângulo, quadrado e
+        pentágono regular. O algoritmo é estruturado para interagir com o
+        usuário, coletando os dados necessários para cada cálculo e fornecendo o
+        resultado desejado.
+      </p>
 
-        <h2 id="estruturalgoritmo">Estrutura do Algoritmo</h2>
-        <p>O algoritmo funciona por meio de um loop onde o usuário escolhe qual figura deseja calcular a área. Em
-            seguida, dependendo da opção escolhida, o programa solicita os parâmetros necessários para o cálculo e exibe
-            o resultado. O loop continuará até que o usuário decida encerrar o programa.</p>
+      <h2 id="estruturalgoritmo">Estrutura do Algoritmo</h2>
+      <p>
+        O algoritmo funciona por meio de um loop onde o usuário escolhe qual
+        figura deseja calcular a área. Em seguida, dependendo da opção
+        escolhida, o programa solicita os parâmetros necessários para o cálculo
+        e exibe o resultado. O loop continuará até que o usuário decida encerrar
+        o programa.
+      </p>
 
-        <h2 id="detalhamento">Detalhamento do Algoritmo</h2>
+      <h2 id="detalhamento">Detalhamento do Algoritmo</h2>
 
-        <h3 id="circulo">1. Cálculo da Área do Círculo</h3>
-        <p>Se o usuário escolher a opção "Círculo", o programa solicita o valor do raio e calcula a área utilizando a
-            fórmula:</p>
-        <div class="code-block">
-            A = π * r²
-        </div>
-        <p>Onde <code>π ≈ 3.1415926535</code> e <code>r</code> é o raio informado pelo usuário.</p>
+      <h3 id="circulo">1. Cálculo da Área do Círculo</h3>
+      <p>
+        Se o usuário escolher a opção "Círculo", o programa solicita o valor do
+        raio e calcula a área utilizando a fórmula:
+      </p>
+      <div class="code-block">A = π * r²</div>
+      <p>
+        Onde <code>π ≈ 3.1415926535</code> e <code>r</code> é o raio informado
+        pelo usuário.
+      </p>
 
-        <h3 id="paralelepipedo">2. Cálculo da Área do Paralelepípedo</h3>
-        <p>Se a opção for "Paralelepípedo", o programa solicita a largura e o comprimento do paralelepípedo, e calcula a
-            área da base com a fórmula:</p>
-        <div class="code-block">
-            A = largura * comprimento
-        </div>
+      <h3 id="paralelepipedo">2. Cálculo da Área do Paralelepípedo</h3>
+      <p>
+        Se a opção for "Paralelepípedo", o programa solicita a largura e o
+        comprimento do paralelepípedo, e calcula a área da base com a fórmula:
+      </p>
+      <div class="code-block">A = largura * comprimento</div>
 
-        <h3 id="triangulo">3. Cálculo da Área do Triângulo</h3>
-        <p>Para o "Triângulo", o algoritmo solicita a base e a altura, e calcula a área com a fórmula:</p>
-        <div class="code-block">
-            A = (base * altura) / 2
-        </div>
+      <h3 id="triangulo">3. Cálculo da Área do Triângulo</h3>
+      <p>
+        Para o "Triângulo", o algoritmo solicita a base e a altura, e calcula a
+        área com a fórmula:
+      </p>
+      <div class="code-block">A = (base * altura) / 2</div>
 
-        <h3 id="quadrado">4. Cálculo da Área do Quadrado</h3>
-        <p>Se a opção for "Quadrado", o algoritmo solicita o valor do lado e calcula a área com a fórmula:</p>
-        <div class="code-block">
-            A = lado²
-        </div>
+      <h3 id="quadrado">4. Cálculo da Área do Quadrado</h3>
+      <p>
+        Se a opção for "Quadrado", o algoritmo solicita o valor do lado e
+        calcula a área com a fórmula:
+      </p>
+      <div class="code-block">A = lado²</div>
 
-        <h3 id="pentagono">5. Cálculo da Área do Pentágono Regular</h3>
-        <p>Por fim, se a escolha for "Pentágono", o algoritmo solicita o valor do lado e usa a fórmula para calcular a
-            área:</p>
-        <div class="code-block">
-            A = (5 * lado²) / (4 * 0.7265)
-        </div>
-        <p>Onde o número <code>0.7265</code> é uma constante que representa o fator de conversão para o pentágono
-            regular.</p>
+      <h3 id="pentagono">5. Cálculo da Área do Pentágono Regular</h3>
+      <p>
+        Por fim, se a escolha for "Pentágono", o algoritmo solicita o valor do
+        lado e usa a fórmula para calcular a área:
+      </p>
+      <div class="code-block">A = (5 * lado²) / (4 * 0.7265)</div>
+      <p>
+        Onde o número <code>0.7265</code> é uma constante que representa o fator
+        de conversão para o pentágono regular.
+      </p>
 
-        <h2 id="fluxo">Fluxo do Algoritmo</h2>
-        <p>O fluxo do algoritmo segue uma estrutura de decisão e repetição:</p>
-        <ul>
-            <li>O algoritmo começa exibindo a mensagem de boas-vindas e as opções de figuras geométricas.</li>
-            <li>O usuário escolhe uma opção de cálculo e fornece os dados necessários.</li>
-            <li>O algoritmo calcula e exibe a área da figura escolhida.</li>
-            <li>O algoritmo pergunta se o usuário deseja continuar ou sair.</li>
-            <li>Se o usuário escolher continuar, o loop se repete; caso contrário, o programa termina.</li>
-        </ul>
+      <h2 id="fluxo">Fluxo do Algoritmo</h2>
+      <p>O fluxo do algoritmo segue uma estrutura de decisão e repetição:</p>
+      <ul>
+        <li>
+          O algoritmo começa exibindo a mensagem de boas-vindas e as opções de
+          figuras geométricas.
+        </li>
+        <li>
+          O usuário escolhe uma opção de cálculo e fornece os dados necessários.
+        </li>
+        <li>O algoritmo calcula e exibe a área da figura escolhida.</li>
+        <li>O algoritmo pergunta se o usuário deseja continuar ou sair.</li>
+        <li>
+          Se o usuário escolher continuar, o loop se repete; caso contrário, o
+          programa termina.
+        </li>
+      </ul>
 
-        <h2 id="conclusao">Conclusão</h2>
-        <p>Este algoritmo é uma forma simples e interativa de calcular áreas de diferentes figuras geométricas. Ele
-            permite que o usuário escolha a figura, insira os dados necessários e obtenha o resultado de maneira rápida
-            e eficiente.</p>
+      <h2 id="conclusao">Conclusão</h2>
+      <p>
+        Este algoritmo é uma forma simples e interativa de calcular áreas de
+        diferentes figuras geométricas. Ele permite que o usuário escolha a
+        figura, insira os dados necessários e obtenha o resultado de maneira
+        rápida e eficiente.
+      </p>
 
-
-        <div style="text-align: center; margin: 40px 0;">
-            <img src="../assets/algoritmo.png" alt="Fluxograma do Algoritmo de Cálculo de Áreas"
-                style="max-width: 100%; height: auto; border-radius: 8px;">
-            <p style="font-size: 16px; color: #555; margin-top: 10px;">Ilustração do fluxo do algoritmo para cálculo de
-                áreas.
-            </p>
-        </div>
-
+      <div style="text-align: center; margin: 40px 0">
+        <img
+          src="algoritmo.png"
+          alt="Fluxograma do Algoritmo de Cálculo de Áreas"
+          style="max-width: 100%; height: auto; border-radius: 8px"
+        />
+        <p style="font-size: 16px; color: #555; margin-top: 10px">
+          Ilustração do fluxo do algoritmo para cálculo de áreas.
+        </p>
+      </div>
     </main>
-
-</body>
-
+  </body>
 </html>
