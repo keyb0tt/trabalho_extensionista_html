@@ -1,64 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E.E. Profa Izabel de Almeida Marin</title>
-    <link rel="stylesheet" href="styleMain.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styleIndex.css">
 </head>
 
 <body>
     <header>
         <div class="header-container">
-            <h1>E.E. Profª Izabel de Almeida Marin</h1>
+            <h1 class="school-title"><i class="fas fa-graduation-cap"></i> E.E. Profª Izabel de Almeida Marin</h1>
+            <nav class="navbar" id="navbar">
+                <div class="nav-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></div>
+                <div class="nav-item"><a href="/docs/pages/sobre.html"><i class="fas fa-info-circle"></i> Sobre</a></div>
+            </nav>
         </div>
-        <nav class="navbar" id="navbar">
-            <div class="nav-item"><a href="index.html">Home</a></div>
-            <div class="nav-item"><a href="sobre.html">Sobre</a></div>
-        </nav>
     </header>
 
     <main class="content-container">
         <div class="content-block fade-in">
-            <a href="portugues.html" class="card-link">
+            <a href="/docs/pages/portugues.html" class="card-link">
                 <img src="https://kultivi.com/wp-content/uploads/2018/10/livros-de-portugues-para-concursos-blog-kultivi.jpg"
                     alt="Livro de Português" class="card-image">
-                <h2>Português</h2>
+                <h2><i class="fas fa-book-open"></i> Português</h2>
                 <p>Descubra as regras do uso do hífen de forma interativa!</p>
             </a>
         </div>
 
         <div class="content-block fade-in">
-            <a href="matematica.html" class="card-link">
+            <a href="/docs/pages/matematica.html" class="card-link">
                 <img src="https://portalconteudoaberto.com.br/wp-content/uploads/2024/04/app-matematica-2048x1536.jpg"
                     alt="Fórmulas Matemáticas no Quadro" class="card-image">
-                <h2>Matemática</h2>
+                <h2><i class="fas fa-square-root-alt"></i> Matemática</h2>
                 <p>Aprenda equações e inequações com exemplos práticos!</p>
             </a>
         </div>
 
         <div class="content-block fade-in">
-            <a href="algoritmo.html" class="card-link">
+            <a href="/docs/pages/algoritmo.html" class="card-link">
                 <img src="https://www.itexperts.com.br/wp-content/uploads/2022/09/13140643/algoritmo.jpg"
                     alt="Código de programação colorido" class="card-image">
-                <h2>Algoritmo</h2>
+                <h2><i class="fas fa-code"></i> Algoritmo</h2>
                 <p>Desenvolva seu pensamento computacional através da construção de algoritmos!</p>
             </a>
         </div>
-
     </main>
 
-    <section class="contact-section">
-        <h2>Fale Conosco</h2>
+    <section class="contact-section fade-in">
+        <h2><i class="fas fa-envelope"></i> Fale Conosco</h2>
         <form class="contact-form">
             <input type="text" placeholder="Seu nome" required>
             <input type="email" placeholder="Seu e-mail" required>
             <textarea rows="5" placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
+            <button type="submit">Enviar Mensagem</button>
         </form>
     </section>
 </body>
-
 </html>

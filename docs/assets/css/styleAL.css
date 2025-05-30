@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Slab:wght@500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============ VARIÁVEIS ============ */
+:root {
+    --primary-color: #3a86ff;
+    --secondary-color: #f8f9fa;
+    --accent-color: #4cc9f0;
+    --text-color: #2b2d42;
+    --light-text: #6c757d;
+    --white: #ffffff;
+    --success-color: #06d6a0;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --border-radius: 8px;
+}
+
+/* ============ BASE ============ */
+body {
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ============ HEADER ============ */
+header {
+    background: linear-gradient(135deg, #3a0ca3, #4361ee);
+    color: var(--white);
+    padding: 1rem 0;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.class-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.class-title i {
+    color: var(--white);
+}
+
+/* ============ NAVBAR ============ */
+.navbar {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-item {
+    padding: 0.75rem 1.25rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-item:hover::after {
+    width: 70%;
+}
+
+.nav-item a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ============ MAIN CONTENT ============ */
+.content {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin: 1.5rem 0 1rem;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 3px;
+}
+
+h3 {
+    color: #3a0ca3;
+    font-size: 1.4rem;
+    margin: 1.5rem 0 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid #f0f0f0;
+    display: inline-block;
+}
+
+p {
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* ============ LISTAS ============ */
+ol, ul {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.ul {
+    list-style-type: lower-alpha;
+    padding-left: 2rem;
+    margin: 0.5rem 0;
+}
+
+/* ============ BLOCO DE CÓDIGO ============ */
+.code-block {
+    background-color: #f1f3f9;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    margin: 1rem 0;
+    border-left: 4px solid var(--accent-color);
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Fira Code', monospace;
+    background-color: #f1f3f9;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-size: 0.95em;
+    color: #d6336c;
+    border: 1px solid #dee2e6;
+}
+
+/* ============ IMAGEM ============ */
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    margin: 1.5rem auto;
+    display: block;
+}
+
+.content p[style*="text-align: center"] {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+/* ============ LINKS ============ */
+a {
+    color: var(--primary-color);
+    text-decoration: none !important;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* ============ RESPONSIVO ============ */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .content {
+        padding: 0 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* ============ ANIMAÇÕES ============ */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.content > * {
+    animation: fadeIn 0.5s ease-out;
+}

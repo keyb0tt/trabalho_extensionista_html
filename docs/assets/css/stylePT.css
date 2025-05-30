@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Slab:wght@500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============ VARIÁVEIS ============ */
+:root {
+    --primary-color: #3a86ff;
+    --secondary-color: #f8f9fa;
+    --accent-color: #4cc9f0;
+    --text-color: #2b2d42;
+    --light-text: #6c757d;
+    --white: #ffffff;
+    --success-color: #06d6a0;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --border-radius: 8px;
+}
+
+/* ============ BASE ============ */
+body {
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ============ HEADER ============ */
+
+header {
+    background: linear-gradient(135deg, #3a0ca3, #4361ee);
+    color: var(--white);
+    padding: 1rem 0;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.school-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.school-title i {
+    color: var(--white);
+}
+
+/* ============ NAVBAR ============ */
+.navbar {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-item {
+    padding: 0.75rem 1.25rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-item:hover::after {
+    width: 70%;
+}
+
+.nav-item a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ============ MAIN CONTENT ============ */
+.content-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.content-section {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+}
+
+.section-title {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 3px;
+}
+
+/* ============ TABELAS ============ */
+.rules-table {
+    width: 100%;
+    margin: 2rem 0;
+    border-collapse: collapse;
+    box-shadow: var(--shadow-sm);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.rules-table th, .rules-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.rules-table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.rules-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.rules-table tr:hover {
+    background-color: #e9ecef;
+}
+
+/* ============ IMAGENS ============ */
+.image-container {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 60%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.02);
+}
+
+.image-caption {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    margin-top: 0.5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+/* ============ LINKS ÚTEIS ============ */
+.useful-links {
+    margin: 2rem 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.useful-links li {
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.useful-links li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.useful-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-block;
+    padding: 0.2rem 0;
+}
+
+.useful-links a:hover {
+    color: var(--accent-color);
+    transform: translateX(3px);
+}
+
+/* ============ RESUMO ============ */
+.quick-summary {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    border-left: 4px solid var(--primary-color);
+    padding: 1.2rem;
+    margin: 1.5rem 0;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.quick-summary h4 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+/* ============ EXERCÍCIOS ============ */
+details {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--success-color);
+}
+
+details summary {
+    font-weight: 600;
+    color: var(--primary-color);
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+details summary::before {
+    content: '+';
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+details[open] summary::before {
+    content: '-';
+}
+
+details[open] {
+    padding-bottom: 1.5rem;
+}
+
+details[open] summary {
+    margin-bottom: 0.75rem;
+}
+
+.resposta {
+    color: var(--success-color);
+    margin-top: 10px;
+    padding-left: 15px;
+    border-left: 3px solid var(--success-color);
+}
+
+/* ============ RESPONSIVO ============ */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .content-section {
+        padding: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* ============ ANIMAÇÕES ============ */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.content-section {
+    animation: fadeIn 0.5s ease-out;
+}
