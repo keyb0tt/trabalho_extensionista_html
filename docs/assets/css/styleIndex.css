@@ -119,6 +119,16 @@ header {
     gap: 2rem;
 }
 
+.main-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: var(--secondary-color);
+}
+
 h2 {
     color: var(--secondary-color) !important;
 }
