@@ -188,7 +188,7 @@ header.scrolled {
 }
 
 .content-article h3 {
-    color: #3a0ca3;
+    color: var(--text-color) !important;
     font-size: 1.3rem;
     margin: 1.2rem 0 0.8rem;
     padding-bottom: 0.5rem;
